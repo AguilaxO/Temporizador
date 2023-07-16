@@ -1,0 +1,52 @@
+#temporizador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    min-height: 100vh;
+}
+
+#rojo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    min-height: 100vh;
+}
+
+.contenedorTemporizador {
+    display: flex;
+    gap: 5px;
+}
+
+.tituloTiempo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.areaTiempo {
+    font-size: 12rem;
+    color: #57a0bc;
+    border-radius: 5px;
+    border-color: rgba(240, 248, 255, 0.658);
+    width: 230px;
+    
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.botonesMasMenos .boton{
+    width: 70px;
+    font-size: 1.5rem;
+}
+
+.botonesEmpezarTerminar .boton{
+    width: 158px;
+    font-size: 2rem;
+}
+

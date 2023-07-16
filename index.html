@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <section id="temporizador">
+        <div class="temporizador">
+            <audio id="sonidoAviso" src="level-passed-143039.mp3">NO soportado</audio>
+            <div class="contenedorTemporizador">
+                <div class="contenedorTiempo contenedorHoras">
+                    <h2 class="tituloTiempo">Hora</h2>
+                    <input id="horas" class="areaTiempo" type="number" value="00" max="99" min="0">
+                    <div class="botones botonesMasMenos">
+
+                        <button id="botonMasHoras" class="boton">+</button>
+                        <button id="botonMenosHoras" class="boton">-</button>
+                    </div>
+                </div>
+                <div class="contenedorTiempo contenedorMinutos">
+                    <div class="contenedorTiempo">
+                        <h2 class="tituloTiempo">Minuto</h2>
+                        <input id="minutos" class="areaTiempo" type="number" value="00" max="59" min="0">
+                        <div class="botones botonesMasMenos">
+                            <button id="botonMasMinutos" class="boton">+</button>
+                            <button id="botonMenosMinutos" class="boton">-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedorTiempo contenedorSegundos">
+                    <div class="contenedorTiempo">
+                        <h2 class="tituloTiempo">Segundo</h2>
+                        <input id="segundos" class="areaTiempo" type="number" value="00" max="59" min="0" >
+                        <div class="botones botonesMasMenos">
+                            <button id="BotonMasSegundos" class="boton">+</button>
+                            <button id="BotonMenosSegundos" class="boton">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="botones botonesEmpezarTerminar">
+                <button id="botonEmpezar" class="boton">Empezar</button>
+                <button id="botonNuevo" class="boton">Nuevo</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/codigo.js"></script>
+</body>
+</html>
