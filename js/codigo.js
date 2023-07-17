@@ -198,28 +198,33 @@ BotonEmpezar.addEventListener('click', function(){
             permitirModificaciones();
             
         }
-        else if ( this.innerHTML != 'Stop' ){
+        else {
             
             // segundosRestantes;
             idIntervalo = setInterval(() => {
                 
-                if (segundosTotales > 0) segundosTotales--;
-                // formatearMensaje(parseInt(segundosTotales / 3600), horas);
-                // alert('hora')
-                formatoTiempoCorriendo( horas, parseInt(segundosTotales / 3600) )
-                // horas.value = parseInt(segundosTotales / 3600);
-                segundosRestantes = segundosTotales % 3600;
-                // formatearMensaje(parseInt(segundosRestantes / 60), minutos);
-                // alert('minutos')
-                formatoTiempoCorriendo( minutos, parseInt(segundosRestantes / 60) )
-                // minutos.value = parseInt(segundosRestantes / 60);
-                segundosRestantes = segundosRestantes % 60;
-                // formatearMensaje(segundosRestantes, segundos)
-                // alert('segundos')
-                formatoTiempoCorriendo( segundos, segundosRestantes);
-                // segundos.value = segundosRestantes;
-                
-                if (segundosTotales <= 0){
+                if (segundosTotales > 0) 
+                {
+                    segundosTotales--
+                    console.log(segundosTotales)
+                    // formatearMensaje(parseInt(segundosTotales / 3600), horas);
+                    // alert('hora')
+                    formatoTiempoCorriendo( horas, parseInt(segundosTotales / 3600) )
+                    // horas.value = parseInt(segundosTotales / 3600);
+                    segundosRestantes = segundosTotales % 3600;
+                    console.log(segundosRestantes)
+                    // formatearMensaje(parseInt(segundosRestantes / 60), minutos);
+                    // alert('minutos')
+                    formatoTiempoCorriendo( minutos, parseInt(segundosRestantes / 60) )
+                    // minutos.value = parseInt(segundosRestantes / 60);
+                    segundosRestantes = segundosRestantes % 60;
+                    console.log(segundosRestantes)
+                    // formatearMensaje(segundosRestantes, segundos)
+                    // alert('segundos')
+                    formatoTiempoCorriendo( segundos, segundosRestantes);
+                    // segundos.value = segundosRestantes;
+                }
+                else {
                     clearInterval(idIntervalo);
                     mensajeTiempoTerminado()
                     idParpadeoPantalla = parpadearPantalla();
